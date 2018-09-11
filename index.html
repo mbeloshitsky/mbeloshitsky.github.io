@@ -20,12 +20,29 @@
         h1 {
             font-weight: normal;
         }
+
+	#prof {
+	    animation: light-marquee 8s infinite;
+	}
+
+	@keyframes light-marquee {
+		0% { color: #000; }
+		19% { color: #000; }
+		20% { color: #666; }
+		21% { color: #000; }
+		70% { color: #000; }
+		72% { color: #999; }
+		76% { color: #000; }
+		78% { color: #000; }
+		80% { color: #969; }
+		82% { color: #000; }
+	}
     </style>
 </head>
 <body>
     <div class="container">
             <h1>Michel Beloshitsky</h1>
-            <p>Web developer from Russia.</p>
+            <p><span id="prof">Web developer</span> from Russia.</p>
             <hr noshade />
             <p><a href="mbeloshitsky@gmail.com">mbeloshitsky@gmail.com</a></p>
     </div>
